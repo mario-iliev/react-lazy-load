@@ -110,7 +110,7 @@ export default class LazyLoad extends Component {
     const { children, className, height, width } = this.props;
     const { visible } = this.state;
 
-    const elStyles = { height, width };
+    const elStyles = { height, width, display: "block" };
     const elClasses = (
       'LazyLoad' +
       (visible ? ' is-visible' : '') +
@@ -150,7 +150,7 @@ LazyLoad.propTypes = {
 };
 
 LazyLoad.defaultProps = {
-  elementType: 'div',
+  elementType: 'span',
   debounce: true,
   offset: 0,
   offsetBottom: 0,
