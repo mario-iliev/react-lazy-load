@@ -1,6 +1,7 @@
 React Lazy Load Component
 =========================
-
+This fork resolves the issue of invalid html when you use lazy loaded images inside a ```<p>```. The image wrapper is changed from **div** to a **span** with "display: block" inline style.
+- - - - - - - - - - - - -
 React Lazy Load is easy to use React component which helps you defer loading content in predictable way. It's fast, works in IE8+, 6KB minified and uses debounce function by default. You can also use component inside scrolling container, such as div with scrollbar. It will be found automatically. Check out an example.
 
 [![build status](https://img.shields.io/travis/loktar00/react-lazy-load.svg?style=flat-square)](https://travis-ci.org/loktar00/react-lazy-load)
